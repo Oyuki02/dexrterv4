@@ -1,161 +1,147 @@
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%; 
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 
 body {
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    position: relative;   
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
 }
 
-.nav-link{
+.nav-link {
   color: #E83B5B !important;
 }
-.navbar{
-  box-shadow: 0px 6px 6px -6px rgba(0,0,0,0.60);
+
+.navbar {
+  box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.60);
 }
-.navbar-light .navbar-nav .nav-link.active,  
+
+.navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #383f3e!important;
+  color: #383f3e !important;
 }
 
 h1,
 h2,
-h3
- {
+h3 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
-p{
-    font-size: 1.25rem;
-}
-/*seccion inicio*/
-.inicio{
-  width: 100%;
-  min-height: 100vh;
-  background: url("../img/Dexter1.1.jpg") no-repeat center center;
-  background-size: cover;
- 
-
-}
-.bloque-inicio, .bloque-nosotros{
-display: flex;
-min-height: 100vh;
-align-items: center;
-justify-content: center;
-}
-.txt-inicio{
-  padding-left: 10%;
+.link-servicios:hover {
+  text-decoration: none;
 }
 
-/*sección nosotros*/
-.img-nosotros{
-  max-width: 500px;
-  padding-bottom: 2rem;
-}
-.caja-titulo-2{
-  padding: 4rem 0 3rem;
-}
-
-
-.texto-nosotros{
-text-align: justify;
-}
-/*sección myv*/
-.caja-2{
-  padding: 6rem 0 6rem;
-}
-
-.card-text{
-  padding: 1rem 0.5rem 2rem;
-  text-align: justify;
-}
-.subtittle{
-  padding-top: 2rem;
-}
-
-/*sección servicios*/
-.height-servicios{
-  height: 600px;
-}
-.caja-titulo{
+.caja-titulo {
   padding: 6rem 0 3rem;
 }
-.caja-padding-bottom{
+
+.caja-padding-bottom {
   padding-bottom: 6rem;
 }
-h1.titulo{
-  padding: 2rem 0 2rem;
-}
-.img-tamaño{
-  width: 160px;
-  margin: auto;
-}
-.title-servicios{
-  padding: 2rem;
-}
-.bg-gray-light{
+
+.bg-gray-light {
   background-color: #ebe8e8;
 }
-.bg-gray{
+
+.bg-gray {
   background-color: #cecece;
 }
 
-/*sección contacto*/
-.bg-contacto{
-  background-color: #2A2A2A; 
-}
-hr{
-  margin-top:0 !important;
-  margin: 0!important;
-  border-top:6px solid #E83B5B!important;
+/*hero*/
+.bg-pink {
+  background-color: #E83B5B;
 }
 
-.padding-extra{
-  padding-top: 3rem;
+.padding-hero {
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+
 }
-.padding-btm{
+
+.img-hero {
+  padding: 2rem 0;
+}
+
+.txt-hero {
+  color: white;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #353A70;
+}
+
+/*sección nosotros*/
+.img-nosotros {
+  width: 400px;
   padding-bottom: 2rem;
 }
 
+.caja-titulo-2 {
+  padding: 4rem 0 3rem;
+}
+
+.texto-nosotros {
+  text-align: justify;
+}
+
+/*sección myv*/
+.caja-2 {
+  padding: 6rem 0 6rem;
+}
+
+.card-text {
+  padding: 1rem 0.5rem 2rem;
+  text-align: justify;
+}
+
+.subtittle {
+  padding-top: 2rem;
+  color: #2A2D66;
+}
+
+/*sección servicios*/
+
+h1.titulo {
+  padding: 2rem 0 2rem;
+  color: #2A2D66;
+  font-weight: 600;
+}
+
+.title-servicios {
+  padding: 2rem;
+  color: #2A2D66;
+}
+
+/*sección contacto*/
+
+hr {
+  margin-top: 0 !important;
+  margin: 0 !important;
+  border-top: 6px solid #E83B5B !important;
+}
+
+.padding-extra {
+  padding-top: 3rem;
+}
+
+.padding-btm {
+  padding-bottom: 2rem;
+}
+
+.img-ejemplo {
+  padding: 1rem;
+}
 
 /*media queries*/
 
-@media (max-width: 576px) { 
-.inicio{
-  background: #dedadb;
-  }
-.txt-inicio{
-  padding: 6rem 1rem 1rem 1rem;
-}
+@media (max-width: 576px) {
 
-.texto-nosotros{
-  padding: 10%;
-  }
-
-  .img-nosotros{
+  .img-nosotros {
     max-width: 345px;
     margin: auto;
-    
-  }
-  .height-servicios{
-    height:auto;
-  }
-  .caja-3{
-    padding: 2rem 0;
-  }
-}
-@media (max-width:768px){
-  .img-nosotros{
-    max-width: 400px;
-    margin: auto;
-    padding: 1rem 0;
-  }
 
-}
-
-.color{
-  background-color: aqua;
+  }
 }
