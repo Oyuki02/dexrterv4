@@ -1,276 +1,629 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>DEXTER GROUP</title>
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- fonts-->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
+    rel="stylesheet"> -->
+  <script src="https://kit.fontawesome.com/fd0370411b.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="./img/HOME/favicon.png" type="image/png">
+  <link rel="icon" href="./img/HOME/favicon.png" type="image/png">
+
+  <title>Axelera</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KMKNHNH');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="20">
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMKNHNH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!--Header-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-nv">
 
-  <!-- Navigation -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-light navbar-custom bg-white fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/logo-dexter.svg" width="auto" height="60px" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#nosotros">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="logo-movil pr-2" href="index.html"> <img src="img/HOME/LogoAxeleraheader.png" width="80" alt=""
+        loading="lazy"></a>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="#quienessomos">¿Quienes somos?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="velocash.html">Velocash</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="personal.html">Personal</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="#hero"> <img src="img/HOME/LogoAxeleraheader.png" width="80" alt=""
+              loading="lazy"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="">
+          <button class="btn btn-sesion my-2 my-sm-0" type="submit" data-toggle="modal"
+            data-target="#sesionModal">Inicia Sesión</button>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#registroModal" data-toggle="modal" data-target="#registroModal">Registrate</a>
+        </li>
+
+      </ul>
+
     </div>
   </nav>
 
-  <!--hero-->
-  <section class="bg-pink">
+  <!--Sectión hero-->
+  <section id="hero" class="hero py-5">
     <div class="container">
-      <div class="row  padding-hero">
-        <div class="col-lg-6 d-flex justify-content-center img-hero">
-          <div class="" style="width:500px;">
-            <img src="img/hero-dexter.png" class="card-img-top" alt="...">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5">
+          <!--card-->
+          <div class="card text-center">
+            <div class="card-header">
+              <p class="card-text">Tu respuesta en menos de 24 horas</p>
+            </div>
+            <div class="card-body">
+              <p class="card-text text-white"> Monto de tu crédito</p>
+              <div class="rangos  text-white">
+                <p class="txt-rango">$3,000.<small>00 </small>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150,000.<small>00 </small>
+                </p>
+                <input type="range" class="custom-range slider" value="3000" min="3000" max="150000" step="1000"
+                  oninput="montoInput(this.value);">
+              </div>
+
+              <p class="txt-resultado">$<output id="montoResult" class="txt-resultado">3,000.00</output></p>
+              <p class="card-text text-white">Plazo de tu crédito</p>
+              <div class="rangos text-white">
+                <p class="txt-rango">6 <small>meses</small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24
+                  <small>meses</small></p>
+                <input type="range" class="custom-range slider" value="6" min="6" max="24" step="1"
+                  oninput="mesesInput(this.value);">
+              </div>
+
+              <p class="txt-resultado"><output id="mesesResult" class="txt-resultado">6</output> meses</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text"> Tus pagos mensuales aproximados</p>
+
+              <p class="txt-resultado">$<output id="pagos" class="txt-resultado"></output>558.39</p>
+              <p class="txt-resultado2">CAT 46.8 % sin iva</p>
+              <button class="btn-amortizacion"><strong>Ver tabla de amortización</strong></button>
+            </div>
+          </div>
+
+          <!--card-->
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pt-4">
+          <div class="row justify-content-center">
+            <img class="img-fluid" alt="" src="./img/HOME/W-LogoAxeleraysloganSeccion1.png" />
+
+          </div>
+          <div class="row justify-content-center pt-5">
+            <img class="img-fluid" alt="" src="./img/HOME/W-Iso1Seccion1.png" />
           </div>
         </div>
-        <div class="col-lg-6 col-lg-6 d-flex align-self-center align-items-center ">
-          <h2 class="text-white text-justify">En <strong>DEXTER</strong> nuestro principal objetivo es brindar servicios de calidad
-            que apoyen a nuestros clientes a lograr sus metas.</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Sectión servicios-->
+  <section class="servicios pt-5">
+    <div class="container px-5">
+      <div class="row py-5">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <h2 class="titulo-sections color-1">Conoce nuestros servicios
+
+          </h2>
+        </div>
+      </div>
+      <div class="row text-center py-4">
+        <div class="col-md-2">
+          <img class="img-fluid" width="80" alt="" src="./img/HOME/W-Iso2velocashSeccion2.png" />
+        </div>
+        <div class="col-md-4">
+          <div class="row py-4">
+            <div class="col-md-12">
+              <img class="img-fluid" width="300" alt="" src="./img/HOME/W-LogoVelocashSeccion2.png" />
+            </div>
+          </div>
+          <div class="row pb-5">
+            <div class="col-md-12">
+              <p class="color-1">
+                Tu adelanto de Nómina
+                <p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="row py-4">
+            <div class="col-12">
+              <img class="img-fluid" width="300" alt="" src="./img/HOME/W-LogoPersonalSeccion2.png" />
+            </div>
+          </div>
+          <div class="row pb-5">
+            <div class="col-12">
+              <p class="color-1">Un crédito Simple <br>a plazos flexibles</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <img class="img-fluid" width="80" alt="" src="./img/HOME/W-Iso3personalSeccion2.png" />
         </div>
       </div>
     </div>
   </section>
 
-  <!--servicios-->
-  <section id="servicios" class="bg-gray-light">
-    <div class="container">
+  <!--section salud financiera-->
 
-      <div class="row caja-titulo">
-        <div class="col-lg-12 text-center">
-          <h1 class="titulo">Nuestros servicios
-          </h1>
+  <section class="salud-f py-5">
+    <div class="container-fluid px-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="titulo-sections text-white">
+            Mejora la salud financiera de tus colaboradores
+          </h2>
         </div>
       </div>
-      <div class="row caja-padding-bottom">
-
-        <div class="col-lg-6 d-flex justify-content-center">
-          <div class="" style="width:400px;">
-            <a  href="#call-center">
-              <img src="img/Dexter.1.png" class="card-img-top" alt="..."></a>
-            <div class="">
-              <a  class="link-servicios" href="#call-center">
-                <h3 class="title-servicios text-center">
-                  Servicios de Call center
-                </h3>
-              </a>
-            </div>
-          </div>
+      <div class="row py-5 px-4">
+        <div class="col-md-3 text-center">
+          <img class="img-fluid" width="225" src="./img/HOME/W-Iso5Seccion3.png" />
         </div>
-
-        <br>
-        <div class="col-lg-6 d-flex justify-content-center">
-          <div class="" style="width: 400px;">
-            <a class="link-servicios" href="#renta-estaciones">
-            <img src="img/dexter-estacion.png" class="card-img-top" alt="..."></a>
-            <div class="">
-              <a class="link-servicios" href="#renta-estaciones">
-              <h3 class="title-servicios text-center">
-                Renta de estaciones de trabajo
-              </h3>
-              </a>
+        <div class="col-md-4 pt-5">
+          <p class="text-white">Ofrecemos un beneficio<br> financiero a tus colaboradores<br> sin costo para la
+            empresa,<br>
+            100% digital y con disposición<br> de efectivo inmediato 24/7.</p>
+        </div>
+        <div class="col-md-5 pt-4">
+          <div class="card2 pt-4">
+            <p class="color-2 text-center">¿Quieres más información?</p>
+            <div class="form-group1">
+              <label for="correo">Correo*</label>
+              <input type="email" class="form-control input-info" id="correo">
             </div>
+            <div class="text-center py-3">
+              <button class="btn-inf">Enviar</button>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!--nosotros-->
-  <section id="nosotros" class="bg-gray">
-    <div class="container">
-      <div class="row caja-titulo-2">
-        <div class="col-lg-12 text-center">
-          <h1 class="titulo">Nosotros
-          </h1>
+
+  <!--seccion credito-->
+
+  <section class="credito py-5">
+
+    <div class="container-fluid">
+      <div class="row py-5">
+        <div class="col-md-12 text-center">
+          <h2 class="titulo-sections color-3">¿Qué necesito para solicitar mi crédito? </h2>
         </div>
       </div>
-      <div class="row caja-padding-bottom">
-        <div class="col-lg-6 d-flex justify-content-center">
-          <img class="img-nosotros" alt="" src="img/Dexter.2.png" />
+      <div class="row align-items-center pdx-6 pb-5">
+        <div class="col-md-2 text-center pb-4">
+
+          <img class="img-fluid" alt="" src="./img/HOME/W-Circulo1Seccion4.png" />
         </div>
-        <div class=" col-lg-6 d-flex align-self-center align-items-center">
-          <p class="texto-nosotros">Contamos con un equipo altamente capacitado en brindarles la mejor solución y respuesta
-            que la comunicación demanda, nuestro personal está constantemente renovando
-            nuestra tecnología en el ámbito de la comunicación y soluciones
-            de contacto.
-          </p>
-        </div>
+        <div class="col-md-4">
+          <p class="color-1 txt-cred">
+            Identificación Oficial<br>
+            (IFE, INE, Pasaporte)</p>
       </div>
-    </div>
-  </section> 
-
-
-  <!--Mision y vision-->
-  <section id="misionyvision" class="bg-gray-light">
-    <div class="container">
-      <div class="row caja-2">
-
-        <div class="col-lg-6 d-flex justify-content-center">
-          <div class="" style="width:400px;">
-            <img src="img/Dexter.3.png" class="card-img-top" alt="...">
-            <div>
-              <h3 class="subtittle text-center">Misión</h3>
-              <p class="card-text ">Sabemos que la satisfacción total del cliente es primero, por lo
-                que estamos orientados a innovar y contar con tecnologías de la información que nos permitan desarrollar
-                soluciones a cualquier reto.
-              </p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="col-lg-6 d-flex justify-content-center">
-          <div class="" style="width: 400px;">
-            <img src="img/Dexter.4.png" class="card-img-top" alt="...">
-            <div>
-              <h3 class="subtittle text-center">Visión</h3>
-              <p class="card-text">Ser líderes en Latino América en soluciones de Call Center,
-                posicionándonos como una empresa altamente responsable y de mayor calidad humana, siendo rentables y la
-                mejor solución de conectividad.</p>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-2 text-center pb-4">
+        <img class="img-fluid"  alt="" src="./img/HOME/W-Circulo2Seccion4.png" />
+      </div>
+      <div class="col-md-4">
+        <p class="color-1 txt-cred">
+          Comprobante de domicilio<br> vigente (Menor a 3 meses)</p>
       </div>
     </div>
-  </section> 
-
-  <!--servicio call center-->
-
-  <section id="call-center" class="bg-gray d-flex justify-content-center">
-    <div class="container">
-      <div class="row caja-titulo-2">
-        <div class="col-lg-12 text-center">
-          <h1 class="titulo">Servicios de call center
-          </h1>
-        </div>
+    <div class="row align-items-center pdx-6">
+      <div class="col-md-4 order-2">
+        <p class="color-1 txt-cred text-right">
+          Estado de cuenta donde<br> recibes tu nómina <br>(Menor a 3 meses)
+        </p>
       </div>
-      <div class="row caja-padding-bottom align-items-center">
-        <div class="col-lg-3 d-flex justify-content-center">
-          <img  class="img-ejemplo" style="width:300px" src="img/img-ejemplo.png">
-        </div>
-        <div class="col-lg-3 d-flex justify-content-center">
-          <p>
-            Quisque sed blandit nisl. Nam convallis mauris nec mauris sagittis, quis rutrum odio maximus. Proin
-            vulputate quam eu sem pellentesque facilisis.
-          </p>
-        </div>
-        <div class="col-lg-3 d-flex justify-content-center">
-          <img  class="img-ejemplo" style="width:300px" src="img/img-ejemplo.png">
-        </div>
-        <div class="col-lg-3 d-flex justify-content-center">
-          <p>
-            Donec lobortis nisl nulla, id ultricies orci egestas et. Aenean viverra leo ac fermentum ornare. Morbi et
-            arcu venenatis, ullamcorper urna sit amet, laoreet lacus.
-          </p>
-        </div>  
+      <div class="col-md-2 text-center pb-4 order-1 order-sm-12">
+        <img class="img-fluid"  alt="" src="./img/HOME/W-Circulo3Seccion4.png" />
+      </div>
+      <div class="col-md-4 order-4">
+        <p class="color-1 txt-cred text-right">
+          Tener entre 18 y 60 años <br>Antigüedad laboral mínima <br>6 meses
+        </p>
+      </div>
+      <div class="col-md-2 text-center pb-4 order-3">
+        <img class="img-fluid"  alt="" src="./img/HOME/W-Circulo4Seccion4.png" />
       </div>
     </div>
+    </div>
+
   </section>
-  
-    <!--servicio renta de estaciones de trabajo-->
 
-  <section id="renta-estaciones" class=" bg-gray-light d-flex justify-content-center">
+  <!--section Funcionamiento-->
+  <section class="funcionamiento pb-5">
     <div class="container">
-      <div class="row caja-titulo-2">
-        <div class="col-lg-12 text-center">
-          <h1 class="titulo">Renta de estaciones de trabajo
-          </h1>
+      <div class="row  py-5">
+        <div class="col-md-12 text-center">
+          <h2 class="titulo-sections color-1"> ¿Cómo funcionamos? </h2>
         </div>
       </div>
-      <div class="row caja-padding-bottom align-items-center">
-        <div class="col-lg-3 d-flex justify-content-center">
-          <p >
-            Quisque sed blandit nisl. Nam convallis mauris nec mauris sagittis, quis rutrum odio maximus. Proin
-            vulputate quam eu sem pellentesque facilisis.
-          </p>
+      <div class="row">
+        <div class="col-md-6 text-center pb-5">
+          <img src="./img/HOME/card-cred1.png" class="img-fluid" />
         </div>
-        <div class="col-lg-3 d-flex justify-content-center">
-          <img  class="img-ejemplo" style="width:300px" src="img/img-ejemplo.png">
+        <div class="col-md-6 text-center">
+          <img src="./img/HOME/card-cred2.png" class="img-fluid" />
         </div>
-        <div class="col-lg-3 d-flex justify-content-center">
-          <p >
-            Donec lobortis nisl nulla, id ultricies orci egestas et. Aenean viverra leo ac fermentum ornare. Morbi et
-            arcu venenatis, ullamcorper urna sit amet, laoreet lacus.
-          </p>
-        </div>  
-
-        <div class="col-lg-3 d-flex justify-content-center">
-          <img  class="img-ejemplo" style="width:300px" src="img/img-ejemplo.png">
-        </div>
-       
       </div>
-    </div>
-  </section> 
-
-  <!--Contactanos-->
-  <section id="contacto" class="py-5 bg-gray">
-    <div class="container text-center">
-      <div class="col-xl-9 mx-auto">
-        <h1 class="titulo padding-extra">Contáctanos</h1>
-        <br>
-        <p class="">Dirección: Calzada de Tlalpan 583 Piso 3, Colonia Alamos, Código Postal: 03400, Alcaldía
-          Benito Juarez, Ciudad de México. </p>
-        <br>
-
-        <div class="row d-flex justify-content-center padding-btm">
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.3494306759694!2d-99.13999948509388!3d19.397302486904366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fefb2efff409%3A0x323a91a49556d1a3!2sPiso%203%2C%20Calz.%20de%20Tlalpan%20583%2C%20%C3%81lamos%2C%2003400%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1594008457251!5m2!1ses-419!2smx"
-            width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-          <br><br>
+      <div class="row py-5">
+        <div class="col-md-6 text-center pb-5">
+          <img src="./img/HOME/card-cred3.png" class="img-fluid" />
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="./img/HOME/card-cred4.png" class="img-fluid" />
         </div>
       </div>
     </div>
   </section>
-  <hr>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-white">
+  <!--section testimonios-->
+  <section class="testimonios pb-5">
     <div class="container">
-      <p class="m-0 text-center small"> Dexter Group Milenio S.A. de C.V.</p>
-
+      <div class="row py-5">
+        <div class="col-md-12">
+          <h2 class="titulo-sections color-1 text-center">
+            Testimonios
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 pb-5">
+          <div class="media card-testimonio">
+            <img src="./img/HOME/avatar1.jpg" class="align-self-start mr-3 img-fluid" alt="..." width="94">
+            <div class="media-body">
+              <p>"Con Velocash puedo adelantar mi nómina para cualquier eventualidad sin preocuparme"</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 pb-5">
+          <div class="media card-testimonio">
+            <img src="./img/HOME/avatar2.jpg" class="align-self-start mr-3 img-fluid" alt="..." width="94">
+            <div class="media-body">
+              <p>"Solicitar un crédito Personal en linea es sencillo y rápido de hacer"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-4">
+        <div class="col-md-12 text-center">
+          <button type="button" class="btn-registrar"><strong>Registrarme</strong></button>
+        </div>
+      </div>
     </div>
+  </section>
+  <!--Sectión-->
+
+  <!--section axelera-->
+  <section id="quienessomos" class="axelera-s7 py-5">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="color-1 text-center txt-somos-axelera">
+            Axelera es una empresa Mexicana enfocada en ofrecer <br>soluciones finacieras a los trabajadores de
+            cualquier empresa <br> de forma ágil, sencilla, personalizada y de forma 100% digital.</p>
+          <br>
+          <p class="color-1 text-center txt-somos-axelera">Entendemos que pedir un crédito suele ser un proceso largo y
+            <br>
+            complicado, por eso nuestro compromiso es ofrecerte una<br> experiencia amigable y darte respuesta en menos
+            de 24 horas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--banner-->
+  <section class="baner-axelera py-5">
+    <div class="container-fluid px-5">
+      <div class="row align-items-center justify-content-center no-gutters">
+        <div class="col-md-2 text-center">
+          <img class="img-fluid" alt="" src="img/HOME/W-Iso14Sección8.png" />
+        </div>
+        <div class="col-md-8" style="max-width: 875px;">
+          <p class="txt-baner-axelera text-white">
+            Tu respuesta en menos de 24 horas <br>
+            Proceso de contratación digital y ágil.
+          </p>
+        </div>
+        <div class="col-md-2 text-center">
+          <img class="img-fluid" alt="" src="img/HOME/W-Iso15Sección8.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--legales-->
+  <section class="legales py-5">
+    <div class="container-fluid px-5">
+      <div class="row px-5">
+        <div class="col-md-7 pl-5">
+          <p class="txt-legales bold">CREDITEA, SAPI DE C.V. SOFOM, E.N.R.</p>
+          <p class="txt-legales text-justify"> Para su constitución y operación no requiere autorización de la
+            Secretaría
+            de Hacienda y Crédito Público, y está sujeta a la supervisión de la Comisión
+            Nacional Bancaria y de Valores, únicamente para efectos de lo dispuesto
+            por el artículo 56 de la Ley General de Organizaciones y Actividades
+            Auxiliares del Crédito.</p><br>
+        </div>
+        <div class="col-md-5">
+          <p class="txt-legales bold">Encuéntranos en:</p>
+          <p class="txt-legales"> Prolongación Paseo de la Reforma No. 1190, Torre B<br>
+            Oficina 2610, Col. Santa Fe, CP 05349, CDMX.</p><br>
+          <p class="txt-legales">Tel +52 (55) 2589-7161</p>
+        </div>
+      </div>
+      <div class="row px-5">
+        <div class="col-md-5 pl-5">
+          <p class="txt-legales bold">CONDUSEF:</p>
+          <p class="txt-legales"> Teléfonos (55) 5340 0999 y (01 800) 999 8080 <br>
+            Página web:<a href="https://www.condusef.gob.mx/"> www.condusef.gob.mx</a></p>
+        </div>
+        <div class="col-md-7 text-right pt-5">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <img class="logos-lgls img-fluid" alt="" src="./img/HOME/logo-buro-entidades-financieras.png" />
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="logos-lgls img-fluid" alt="" src="./img/HOME/cnbv.png" />
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="logos-lgls img-fluid" alt="" src="./img/HOME/condusef.jpg" />
+            </div>
+            <div class="col-6 col-md-3">
+              <img class="logos-lgls img-fluid" alt="" src="./img/HOME/logocirculocredito.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--footer-->
+  <footer class="footer pt-5 pb-3">
+    <div class="container-fluid px-5">
+      <div class="row">
+        <div class="col-md-2 text-center pb-3">
+          <img class="img-fluid" src="img/HOME/LogoAxeleraheader.png" />
+        </div>
+        <div class="col-md-3">
+          <p class="txt-footer">Aviso de privacidad</p>
+          <p class="txt-footer">Terminos y condiciones</p>
+        </div>
+        <div class="col-md-5">
+          <p class="txt-footer">Buró de Entidades Financieras </p>
+          <p class="txt-footer">Unidad Especializada de Atención a Usuarios (UNE)</p>
+        </div>
+        <div class="col-md-2 text-center">
+          <div class="padd-iconos-r">
+            <img class="iconos-redes img-fluid" src="img/HOME/facebook.svg" />
+            <img class="iconos-redes2 img-fluid" src="img/HOME/linkedin.svg" />
+          </div>
+          <p class="txt-footer2"> &copy; Axelera 2020</p>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--Modals-->
 
+  <!-- Modal sesion-->
+  <div class="modal fade" id="sesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="text-center">
+          <h3 class="modal-title color-1 pb-4" id="exampleModalLabel">Iniciar sesión</h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-body pb-3">
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" Correo">
+            </div>
+            <div class="form-group">
+
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Password">
+            </div>
+            <div class="form-inline">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label color-1" for="defaultCheck1">Recuérdame</label>
+                <p class="small txt-small color-1">¿Olvidaste tu contraseña?</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="text-center py-4">
+          <div class="pb-4">
+            <button type="button" class="btn btn-modal-sesion">Iniciar sesión</button>
+          </div>
+          <p class="small  color-1">¿Aún no te haz registrado?</p>
+          <p class="small verde pb-4"> <a class="verde" href="#registroModal" data-toggle="modal"
+              data-target="#registroModal">¡Registrate aqui!</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--modal registro-->
+
+  <div class="modal" tabindex="-1" id="registroModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="text-center">
+          <h3 class="modal-title color-1 pb-4" id="exampleModalLabel">Registrate</h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-body">
+            <div class="form-row">
+              <div class="form-group col-md-6 color-1">
+                <label for="inputnombre">Nombres*</label>
+                <input type="text" class="form-control" id="inputnombre">
+              </div>
+              <div class="form-group col-md-6 color-1">
+                <label for="inputApellidos">Apellidos*</label>
+                <input type="text" class="form-control" id="inputApellidos">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 color-1">
+                <label for="inputCelular">Celular*</label>
+                <input type="text" class="form-control" id="inputCelular">
+              </div>
+              <div class="form-group col-md-6 color-1">
+                <label for="inputCurp">CURP*</label>
+                <input type="text" class="form-control" id="inputCurp">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Correo*</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="form-group col-md-6 color-1">
+                <label for="inputPassword4">Contraseña*</label>
+                <input type="password" class="form-control" id="inputPassword4">
+              </div>
+            </div>
+            <div class="form-check color-1">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label small" for="defaultCheck2">
+                Acepto términos y condiciones del servicio, he leído las políticas de privacidad del sitio
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="text-center">
+          <div class="pb-5">
+            <button id="btnShow" type="button" class="btn btn-modal-sesion" data-toggle="modal"
+              data-target="#graciasModal">Registrate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal gracias-->
+
+  <!-- Modal -->
+  <div class="modal fade fade alert alert-success alert-dismissable" id="graciasModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body form-body">
+          <img src="img/HOME/check.png" />
+
+          <p class="verde txt-exito pt-4">Te haz registrado con éxito</p>
+          <p class="color-1 txt-2 pb-4">¡Ahora ya puedes disfrutar de nuestros servicios!</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+
+  <script>
+    function montoInput(val) {
+      document.getElementById('montoResult').value = val;
+    }
+
+    function mesesInput(val) {
+      document.getElementById('mesesResult').value = val;
+    }
+
+    function calculoPagos() {
+
+      const tasaAnual = .39;
+      const tasaMensual = tasaAnual / 12;
+      let monto = document.getElementById('montoResult').value;
+      let plazo = document.getElementById('mesesResult').value;
+
+      let tasaPlazo = Math.pow(1 + tasaMensual, plazo);
+      let calculo = Number((tasaMensual * tasaPlazo * (monto / (tasaPlazo - 1))).toFixed(2));
+      let pagos = calculo.toLocaleString();
+      return pagos;
+    }
+    console.log("pagos");
+  </script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
   </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
-
 </body>
 
 </html>
